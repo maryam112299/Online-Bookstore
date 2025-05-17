@@ -60,8 +60,8 @@ Set up your MySQL database with these tables:
   profilePicture VARCHAR(255),
   createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
-CREATE TABLE books (
+```
+```CREATE TABLE books (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(100) NOT NULL,
   author VARCHAR(100) NOT NULL,
@@ -74,8 +74,6 @@ CREATE TABLE books (
 );
 ```
 
-
-```
 Start the server:
 ```npm start```
 
