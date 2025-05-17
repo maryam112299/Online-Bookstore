@@ -61,8 +61,6 @@ Set up your MySQL database with these tables:
   createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
-```
 CREATE TABLE books (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(100) NOT NULL,
