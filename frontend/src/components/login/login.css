@@ -1,0 +1,83 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Reduced from 100vh to 80vh */
+    width: 90%; /* Added width control */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 50px auto; /* Centers the wrapper horizontally with top/bottom margin */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px; /* Optional: if you want rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: if you want shadow */
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+.login-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000000;
+  font-size: 24px;
+}
+
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #616161; 
+}
+
+.login-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.signup-link {
+  background: none;
+  border: none;
+  color: #616161;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+  }
+  
+  .login-title {
+    font-size: 20px;
+  }
+}

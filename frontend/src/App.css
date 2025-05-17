@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ 
+body {
+  font-family: 'Roboto', sans-serif;
+  }
+ 
+label {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+ 
+input.form-control, input.form-control:focus {
+  background: #ffffff;
+}
+ 
+.error {
+  position: absolute;
+  color: red;
+  font-size: 11px;
+}
+/*for dynamic view*/
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in-image {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Add to App.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-container,
+  .signup-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+/* App.css or index.css */
+body {
+  background-color: #f5f7fa; 
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Optional: Add a gradient or image 
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c09e88 100%);
+}*/
+
+/* Or with image */
+body {
+  background-image: url('./assets/background.avif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.home-button, .login-btn, .signup-btn {
+  transform: scale(1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home-button:hover, .login-btn:hover, .signup-btn:hover {
+  transform: scale(1.03);
+}
+
+/* Add this anywhere in your App.css */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
